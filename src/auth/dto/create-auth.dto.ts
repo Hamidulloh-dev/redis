@@ -1,4 +1,8 @@
+import { IsString } from "class-validator"
+
 export class CreateAuthDto {
-    username: string
+    @IsString()
+    phone_number: string
+    @IsString()
     password: string
 }
